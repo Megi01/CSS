@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(23, 23, 32);
+}
+
+.container{
+position: relative;
+
+}
+
+.navbar{
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    color: rgb(23, 23, 32);
+}
+.logo a{
+    font-family: 'Allura', cursive;
+    font-size: 38px;
+    color: rgb(16, 19, 26);
+}
+.navbar_items ul{
+    display: flex;
+    
+}
+.navbar_items ul li{
+    text-transform: uppercase;
+    margin: 10px 10px;
+}
+   
+/* banner img*/
+.banner_image{
+    background: url("img/decor.jpg") top center;
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.banner_content{
+    text-align: center;
+    margin-bottom: 30px;
+ }
+.banner_content h1{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.banner_content p{
+padding: 5px;
+}
+
+/* about*/
+.about{
+    padding: 10% 10%;
+    text-align: center;
+}
+.about h2{
+margin-bottom: 15px;
+font-family: 'Josefin Sans', sans-serif; 
+font-size: 45px;
+word-spacing: 25px;
+}
+
+.btn a{
+    display: block;
+    width: 180px;
+    height: 35px;
+    border: 2px solid rgb(124, 21, 21);
+    line-height: 35px;
+    margin: 25px auto 0;
+    color: rgb(134, 25, 25);
+    text-align: center0;
+}
+
+/* living room*/
+.living_room{
+    background-color: rgba(163, 148, 148, 0.808);
+    padding: 7% 5%;
+    text-align: center;
+}
+.living_room h2{
+    margin-bottom: 20px;
+    font-family: 'Josefin Sans', sans-serif; 
+    font-size: 45px;
+    }
+.col{
+    display: flex;
+    padding-top: 40px;
+}
+.col img{
+    padding: 5px 5px;
+}
+.col:hover img{
+    transform: scale(1.1);
+}
+
+
+/*bedroom*/
+.bedroom{
+    background-color: rgba(163, 148, 148, 0.808);
+    text-align: center;
+    padding: 7% 10%;
+    margin-top: 10px;
+}
+.bedroom h2{
+    margin-bottom: 20px;
+    font-family: 'Josefin Sans', sans-serif; 
+    font-size: 45px;
+    
+}
+.video-col h3{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 40px;
+    font-family: 'Josefin Sans', sans-serif; 
+    font-size: 45px;
+    }
+.video-col p{
+margin-top: 60px;
+    }
+ .button{
+     padding: 20px 25px;
+     color: rgb(170, 38, 38);
+     border-radius: 1%;
+     border-color: rgb(168, 16, 16);
+     cursor: pointer;
+     margin-top: 20px;
+
+ }   
+.row{
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: -10px;
+}
+.video-col img{
+    
+    margin-left: 100px;
+    object-fit: cover;
+}
+
+/* contact us*/
+.contact{
+    padding: 5% 10%;
+    text-align: center;
+}
+.contact h2{
+    margin-bottom: 20px;
+    font-family: 'Josefin Sans', sans-serif; 
+    font-size: 45px;
+}
+
+.form_input{
+    margin-bottom: 15px;
+}
+
+.form_input input[type="text"]{
+    width: 300px;
+    padding: 12px 20px;
+    border: 1px solid #000;
+}
+.form_input textarea{
+    width: 250px;
+    padding: 12px 20px;
+    height: 80px;
+}
+
+/* footer*/
+.info{
+    background-color: rgba(163, 148, 148, 0.808);
+    text-align: left;
+    padding: 7% 10%;
+    margin-top: 10px;
+}
+.info h3{
+    padding: 10px;
+}
+
+.social{
+    margin-top: -80px;
+    }
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-decoration: none;
+    margin: 5px 2px;
+      }
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  .rights{
+    margin-top: 70px;
+  }
+
+
+  /* media queries*/
+
+  @media screen and (max-width: 480px) {
+    .navbar{
+        width: 50%;
+        height: 30px;
+        display: block;
+        justify-content: space-around;
+        position: absolute;
+        color: rgb(23, 23, 32);
+    } 
+    .logo a{
+        text-align: center;
+        font-size: 30px;
+    }
+    .navbar_items ul{
+        display: block;
+    }
+    .col{
+        display: block;
+        padding-top: 40px;
+    }
+    .navbar_items ul li{
+margin-left: 100px;
+    }
+    .banner_content{
+        text-align: center;
+        margin-top: 40px;
+        margin-left: 100px;
+     }
+     .banner_content h1{
+      font-size: 30px;
+     }
+     .about h2{
+        margin-bottom: 15px;
+        font-family: 'Josefin Sans', sans-serif; 
+        font-size: 35px;
+        
+  }
+  .living_room h2{
+    margin-bottom: 20px;
+    font-size: 30px;
+    }
+    .bedroom h2{
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+    .video-col h3{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+       font-size: 25px;
+    }
+     .row{
+    display: block;
+    padding-top: 40px;
+}
+      .contact h2{
+    font-size: 30px;
+}
+    .video-col img{
+        margin-bottom: 20px;
+      }
+      .social{
+    margin-top: 0px;
+    padding: 15px;
+    padding-right: 100px;
+          }
+   .fa {
+    padding: 10px;
+       width: 30px;
+    margin: 5px 2px;
+  } 
+.info{
+    text-align: left;
+    padding: 7%;
+    margin-top: 10px;
+    margin-left: -20px;
+}
+}
